@@ -1,0 +1,16 @@
+// flexbox
+// flex-direction row-wrap
+// remove list styling
+
+#main-container {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
