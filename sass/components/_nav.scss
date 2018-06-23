@@ -1,5 +1,7 @@
+@import '../variables';
+
 nav {
-  background-color: lightgray;
+  background-color: $lightgray;
   position: absolute;
   top: 0;
   left: 0;
@@ -8,14 +10,17 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // & represenets the element, one l        level higher,
-  //   nav in this case
+  box-shadow: $boxshadow;
+  // & represenets the element,
+  // one level higher,
+  // nav in this case
   & > * {
     line-height: 56px;
     height: 56px;
     padding: 0 20px 0 20px;
   }
-  // This is the direct parent of the       current element,
+  //  This is the direct parent
+  //  of the current element,
   //  nav in this case
   & + * {
     margin-top: 76px
