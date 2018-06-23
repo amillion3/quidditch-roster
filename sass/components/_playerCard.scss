@@ -1,0 +1,66 @@
+@import '../variables';
+
+%player-defaults {
+  @include default-font(14px);
+  background-color: $gold;
+  h3, h5 {
+    text-align: center;
+    @include default-font(18px);
+  }
+  width: 18%;
+  margin-bottom: 25px;
+  line-height: 1px;
+  border-radius: 2px;
+  box-shadow: $boxshadow;
+  .img-holder {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+
+.player-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding-left: 0;
+
+  & > * {
+    @extend %player-defaults;
+  }
+
+  .player-team-gryffindor {
+    .player-name {
+      color: $gryffindor;
+    }
+  }
+  .player-team-slytherin {
+    .player-name {
+      color: $slytherin;
+    }
+  }
+  .player-team-hufflepuff {
+    .player-name {
+      color: $hufflepuff;
+    }
+  }
+  .player-team-ravenclaw {
+    .player-name {
+      color: $ravenclaw;
+    }
+  }
+}
+
