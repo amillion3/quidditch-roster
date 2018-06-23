@@ -1,0 +1,16 @@
+@import '../variables';
+
+#button-container {
+  .team-button-gryffindor {
+    background-color: $gryffindor;
+  }
+  .team-button-slytherin {
+    background-color: $slytherin;
+  }
+  .team-button-hufflepuff {
+    background-color: $hufflepuff;
+  }
+  .team-button-ravenclaw {
+    background-color: $ravenclaw;
+  }
+}
