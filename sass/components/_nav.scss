@@ -5,5 +5,27 @@ nav {
   left: 0;
   width: 100%;
   height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // & represenets the element, one l        level higher,
+  //   nav in this case
+  & > * {
+    line-height: 56px;
+    height: 56px;
+    padding: 0 20px 0 20px;
+  }
+  // This is the direct parent of the       current element,
+  //  nav in this case
+  & + * {
+    margin-top: 76px
+  }
+  ul {
+    list-style-type: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
 }
-
